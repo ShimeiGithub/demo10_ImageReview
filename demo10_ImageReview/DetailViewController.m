@@ -42,7 +42,7 @@
 
 - (NSString *)imagesLocalPath{
     if (_imagesLocalPath == nil) {
-        NSString *docPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
+        NSString *docPath = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).firstObject;
         _imagesLocalPath = [docPath stringByAppendingString:@"images"];
         //不存在就创建文件夹
         if (![[NSFileManager defaultManager] fileExistsAtPath:_imagesLocalPath]) {
