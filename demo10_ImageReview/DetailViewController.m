@@ -43,7 +43,8 @@
 - (NSString *)imagesLocalPath{
     if (_imagesLocalPath == nil) {
         NSString *cachescPath = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).firstObject;
-        _imagesLocalPath = [cachescPath stringByAppendingString:@"images"];
+        //使用Component的好处就是文件夹会自动加'/'
+        _imagesLocalPath = [cachescPath stringByAppendingPathComponent:@"images"];
         //不存在就创建文件夹
         if (![[NSFileManager defaultManager] fileExistsAtPath:_imagesLocalPath]) {
             NSError *error = nil;
