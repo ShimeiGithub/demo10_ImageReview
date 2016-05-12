@@ -58,9 +58,14 @@
 }
 
 - (void)downloadImage{
+    /** 
+        http://images.apple.com/v/iphone-5s/gallery/a/images/download/photo_xxx.jpg
+        lastComponent的意思就是photo_xxx
+     */
+    
     NSString *lastComponent = self.imageNetPath.lastPathComponent;
     //图片的保存路径
-    NSString *imageFilePath = [self.imagesLocalPath stringByAppendingString:lastComponent];
+    NSString *imageFilePath = [self.imagesLocalPath stringByAppendingPathComponent:lastComponent];
     NSFileManager *manager = [NSFileManager defaultManager];
     if ([manager fileExistsAtPath:imageFilePath]) {
         UIImage *image = [UIImage imageWithContentsOfFile:imageFilePath];

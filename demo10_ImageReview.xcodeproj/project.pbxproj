@@ -424,7 +424,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = demo10_ImageReview/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Shime.demo10-ImageReview";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Shime.ImageReviewu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -435,7 +435,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = demo10_ImageReview/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Shime.demo10-ImageReview";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Shime.ImageReviewu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -505,6 +505,7 @@
 				F39864FD1CE4765D00750637 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F39864FE1CE4765D00750637 /* Build configuration list for PBXNativeTarget "demo10_ImageReviewTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +514,7 @@
 				F39865001CE4765D00750637 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F39865011CE4765D00750637 /* Build configuration list for PBXNativeTarget "demo10_ImageReviewUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +523,7 @@
 				F39865031CE4765D00750637 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
